@@ -12,6 +12,7 @@
 		C62E2F8F1D4A257B00C1C234 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C62E2F8D1D4A257B00C1C234 /* Main.storyboard */; };
 		C62E2F911D4A257B00C1C234 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C62E2F901D4A257B00C1C234 /* Assets.xcassets */; };
 		C62E2F941D4A257B00C1C234 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C62E2F921D4A257B00C1C234 /* LaunchScreen.storyboard */; };
+		C6B2EF791D5E6CD6006F629B /* button.wav in Resources */ = {isa = PBXBuildFile; fileRef = C6B2EF781D5E6CD6006F629B /* button.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		C62E2F901D4A257B00C1C234 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C62E2F931D4A257B00C1C234 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C62E2F951D4A257B00C1C234 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6B2EF781D5E6CD6006F629B /* button.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = button.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		C62E2F881D4A257B00C1C234 /* modern-calculator */ = {
 			isa = PBXGroup;
 			children = (
+				C6B2EF781D5E6CD6006F629B /* button.wav */,
 				C62E2F891D4A257B00C1C234 /* AppDelegate.swift */,
 				C62E2F8B1D4A257B00C1C234 /* ViewController.swift */,
 				C62E2F8D1D4A257B00C1C234 /* Main.storyboard */,
@@ -96,6 +99,7 @@
 				TargetAttributes = {
 					C62E2F851D4A257B00C1C234 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = ZQKHW5PP7N;
 					};
 				};
 			};
@@ -124,6 +128,7 @@
 			files = (
 				C62E2F941D4A257B00C1C234 /* LaunchScreen.storyboard in Resources */,
 				C62E2F911D4A257B00C1C234 /* Assets.xcassets in Resources */,
+				C6B2EF791D5E6CD6006F629B /* button.wav in Resources */,
 				C62E2F8F1D4A257B00C1C234 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,10 +256,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "modern-calculator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.iocreate.modern-calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -262,10 +270,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "modern-calculator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.iocreate.modern-calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -288,6 +299,7 @@
 				C62E2F9A1D4A257B00C1C234 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
